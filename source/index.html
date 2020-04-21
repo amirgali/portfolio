@@ -1,0 +1,760 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Amirgali</title>
+
+    <link href="img/icon-title.png" rel="icon">
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:200,300,300i,400,700&display=swap&subset=cyrillic-ext" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+
+            <div class="header__inner">
+
+                <div class="user">
+                    <div class="user__avatar">
+                        <img src="img/avatar.jpg" alt="аватар" width="57" height="57">
+                    </div>
+                    <div class="user__content">
+                        <div class="user__name">Amirgali <br>Turalinov</div>
+                        <div class="user__prof">Junior Developer</div>
+                    </div>
+                </div>
+
+                <nav class="nav" id="nav">
+                    <a href="#work" class="nav__link nav__link--usual">Work</a>
+                    <a href="#about" class="nav__link nav__link--usual">About me</a>
+                    <a href="#blog" class="nav__link nav__link--usual">Blog</a>
+                    <a href="#contact" class="nav__link nav__link--usual">READ ME</a>
+                    <a href="#" class="nav__link nav__link--btn" data-modal="#modal_hire_me">Hire Me</a>
+                </nav>
+
+                <button class="burger" type="button" id="navToggle">
+                    <img class="burger__icon" src="img/burger.svg" alt="Инонка меню">
+                </button>
+
+            </div>
+
+        </div>
+    </header>
+    <!-- Intro -->
+    <section class="intro">
+        <div class="container">
+
+            <div class="intro__inner">
+
+                <div class="intro__content">
+                    <h2 class="intro__subtitle">Hello, I`m</h2>
+                    <h1 class="intro__title">Amirgali Turalinov</h1>
+                    <div class="intro__text">Junior Developer</div>
+
+                    <div class="social">
+                        <a href="https://www.instagram.com/amirgali/" class="social__link" target="_blank">
+                            <img src="img/instagram.svg" alt="">
+                        </a>
+                        <a href="https://github.com/amirgali" class="social__link" target="_blank">
+                            <img src="img/github.svg" alt="">
+                        </a>
+                        <a href="https://www.linkedin.com/in/amirgali-turalinov-220b66199/" class="social__link" target="_blank">
+                            <img src="img/in.svg" alt="">
+                        </a>
+                    </div>
+
+                    <a class="btn" href="#" data-modal="#modal_hire_me">Hire Me</a>
+                    <button class="btn" type="button" data-modal="#modal_resume">See My Resume</button>
+
+                </div>
+
+                <img class="intro__photo" src="img/photo-1.jpg" alt="Фотография">
+
+
+            </div>
+
+        </div>
+    </section>
+
+    <div class="works" id="work">
+        <div class="container">
+
+            <div class="works__nav">
+                <a href="#" class="works__nav-link" data-filter="all">All</a>
+                <a href="#" class="works__nav-link" data-filter="training">Training</a>
+                <a href="#" class="works__nav-link" data-filter="working">Working</a>
+                <a href="#" class="works__nav-link" data-filter="other">Оther</a>
+            </div>
+
+            <div class="portfolio" id="portfolio">
+
+                <div class="portfolio__col" data-cat="training">
+                    <div class="work" data-modal="#modal_project_1">
+                        <img class="work__image" src="img/project_1-sm.jpg" alt="Картинка к проекту">
+                        <div class="work__content">
+                            <div class="work__cat">
+                                category: training
+                            </div>
+                            <div class="work__title">
+                                TECHNOMART
+                                <time class="work__date" datetime="2019-11-03 12:00">2019</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__col" data-cat="training">
+                    <div class="work" data-modal="#modal_project_2">
+                        <img class="work__image" src="img/project_2-sm.jpg" alt="Картинка к проекту">
+                        <div class="work__content">
+                            <div class="work__cat">
+                                category: training
+                            </div>
+                            <div class="work__title">
+                                Photo app “Pink”
+                                <time class="work__date" datetime="2020-02-06 12:00">2020</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__col" data-cat="training">
+                    <div class="work" data-modal="#modal_project_3">
+                        <img class="work__image" src="img/project_3-sm.jpg" alt="Картинка к проекту">
+                        <div class="work__content">
+                            <div class="work__cat">
+                                category: training
+                            </div>
+                            <div class="work__title">
+                                Сat hostel
+                                <time class="work__date" datetime="2020-02-06 12:00">2020
+                                </time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div class="portfolio__col" data-cat="training">
+                    <div class="work" data-modal="#modal_project_4">
+                        <img class="work__image" src="img/project_bg.jpg" alt="Картинка к проекту">
+                        <div class="work__content">
+                            <div class="work__cat">
+                                category: training
+                            </div>
+                            <div class="work__title">
+                                Project title
+                                <time class="work__date" datetime="2020-02-06 12:00">2020</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__col" data-cat="working">
+                    <div class="work" data-modal="#modal_project_5">
+                        <img class="work__image" src="img/project_bg.jpg" alt="Картинка к проекту">
+                        <div class="work__content">
+                            <div class="work__cat">
+                                category: working
+                            </div>
+                            <div class="work__title">
+                                Project title
+                                <time class="work__date" datetime="2020-02-06 12:00">2020</time>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="portfolio__col" data-cat="other">
+                    <div class="work" data-modal="#modal_project_6">
+                        <img class="work__image" src="img/project_bg.jpg" alt="Картинка к проекту">
+                        <div class="work__content">
+                            <div class="work__cat">
+                                category: other
+                            </div>
+                            <div class="work__title">
+                                Project title
+                                <time class="work__date" datetime="2020-02-06 12:00">2020
+                                </time>
+                            </div>
+                        </div>
+                    </div>
+                </div> -->
+            </div>
+            <!-- portfolio -->
+
+            <!--  <div class="text-center">
+                <a class="btn btn--sm" href="#">LOAD MORE WORK</a>
+            </div> -->
+
+        </div>
+    </div>
+
+    <section class="about" id="about">
+        <div class="container">
+            <div class="about__inner">
+                <div class="about__photo">
+                    <img class="img" src="img/photo-4.jpg" alt="Фотография">
+                </div>
+
+                <div class="about__content">
+
+                    <h3 class="about__title">about me</h3>
+                    <h2 class="about__bigtitle">who am i</h2>
+                    <div class="about__text">
+                        <p>The main development stack: HTML5, CSS3, JS, SCSS (SASS), BEM, Autoprefixer, Gulp, GIT, VSCode, Photoshop.
+                        </p>
+
+                        <p>Favorite programming books: MacFarland - New Great CSS Book. </p>
+
+                        <p><a class="about__link" href="https://assets.htmlacademy.ru/certificates/intensive/111/988453.pdf?1573155864" target="_blank">HTML-academy, HTML и CSS, level 1</a></p>
+                    </div>
+                    <a class="btn" href="#" data-modal="#modal_hire_me">Hire Me</a>
+                    <button class="btn" type="button" data-modal="#modal_resume">See My Resume</button>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Reviews  -->
+    <div class="reviews" id="blog">
+        <div class="container">
+
+            <div class="reviews__item">
+
+                <div class="reviews__text">
+                    <p>There will soon be reviews from customers. No posts yet.</p>
+                </div>
+
+                <div class="reviews__author">
+                    <img class="reviews__photo" src="img/reviews-bg.jpg" alt="">
+                    <div class="reviews__name">Edward M. Brooks</div>
+                    <div class="reviews__company">Company</div>
+                    <div class="reviews__rating">
+                        <img class="reviews__star" src="img/star.svg" alt="Иконка звезды рейтинга" width="13" height="13">
+                        <img class="reviews__star" src="img/star.svg" alt="Иконка звезды рейтинга" width="13" height="13">
+                        <img class="reviews__star" src="img/star.svg" alt="Иконка звезды рейтинга" width="13" height="13">
+                        <img class="reviews__star" src="img/star.svg" alt="Иконка звезды рейтинга" width="13" height="13">
+                        <img class="reviews__star reviews__star--unactive" src="img/star.svg" alt="Иконка звезды рейтинга" width="13" height="13">
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+    <!-- /.Reviews -->
+
+    <!--News -->
+    <section class="news">
+        <div class="container">
+            <div class="news__header">
+                <h3 class="news__title">read me</h3>
+                <div class="news__text">Sometimes i write something smart</div>
+            </div>
+
+            <div class="articles">
+
+                <div class="articles__col">
+                    <div class="articles__item">
+                        <div class="articles__header">
+                            <time class="articles__date" datetime="2020-02-15 18:00">15<br>february</time>
+                            <a href="https://www.instagram.com/p/B8oPzLooH5f/" target="_blank">
+                                <img src="img/blog_01.jpg" alt="Фотография Амиргали" class="articles__photo">
+                            </a>
+                        </div>
+                        <div class="articles__content">
+                            <h4 class="articles__title">
+                                <a>sport</a>
+                            </h4>
+                            <div class="articles__cat">CATEGORY</div>
+                            <div class="articles__text">
+                                <p>School Basketball League.<br> kes-basket
+                                </p>
+                            </div>
+                        </div>
+                        <a href="https://www.instagram.com/p/B8oPzLooH5f/" class="btn btn--sm" target="_blank">See more</a>
+                    </div>
+                </div>
+
+                <div class="articles__col">
+                    <div class="articles__item">
+                        <div class="articles__header">
+                            <time class="articles__date" datetime="2019-08-14 14:00">14<br>august</time>
+                            <a href="https://www.instagram.com/p/B2ZVgh4I51z/" target="_blank">
+                                <img src="img/blog_02.jpg" alt="Фотография Амиргали" class="articles__photo">
+                            </a>
+                        </div>
+                        <div class="articles__content">
+                            <h4 class="articles__title">
+                                <a>travel</a>
+                            </h4>
+                            <div class="articles__cat">CATEGORY</div>
+                            <div class="articles__text">
+                                <p>Saratov met with good weather, a large construction site and the opening of the swimming season.</p>
+                            </div>
+                        </div>
+                        <a href="https://www.instagram.com/p/B2ZVgh4I51z/" class="btn btn--sm" target="_blank">See more</a>
+                    </div>
+                </div>
+
+                <div class="articles__col">
+                    <div class="articles__item">
+                        <div class="articles__header">
+                            <time class="articles__date" datetime="2018-08-18 12:00">18<br>august</time>
+                            <a href="https://www.instagram.com/p/BmneQzVAxdb/" target="_blank">
+                                <img src="img/blog_03.jpg" alt="" class="articles__photo">
+                            </a>
+                        </div>
+                        <div class="articles__content">
+                            <h4 class="articles__title">
+                                <a>travel</a>
+                            </h4>
+                            <div class="articles__cat">CATEGORY</div>
+                            <div class="articles__text">
+                                <p>Just a guitar and<br> great weather.</p>
+                            </div>
+                        </div>
+                        <a href="https://www.instagram.com/p/BmneQzVAxdb/" class="btn btn--sm" target="_blank">See more</a>
+                    </div>
+                </div>
+
+            </div>
+            <!-- articles -->
+
+            <div class="news__footer">
+                <a class="news__link" href="https://www.instagram.com/amirgali/" target="_blank">See more posts</a>
+            </div>
+
+        </div>
+        <!-- container -->
+    </section>
+    <!-- news -->
+
+
+
+    <!-- footer -->
+    <footer class="footer" id="contact">
+        <div class="container">
+
+            <div class="footer__inner">
+
+                <div class="footer__credits">
+                    <div class="footer__copyright">
+                        &copy; 2020 Amirgali Turalinov
+                    </div>
+                    <div class="footer__social">
+                        <a href="https://www.instagram.com/amirgali/" target="_blank">
+                            <img src="img/instagram-gray.svg" alt="">
+                        </a>
+                        <a href="https://github.com/amirgali" target="_blank">
+                            <img src="img/github-gray.svg" alt="">
+                        </a>
+                        <a href="https://www.linkedin.com/in/amirgali-turalinov-220b66199/" target="_blank">
+                            <img src="img/linkedin-gray.svg" alt="">
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__nav">
+                    <a href="#work" class="footer__nav-link footer__nav-link--usual">Work</a>
+                    <a href="#about" class="footer__nav-link footer__nav-link--usual">About me</a>
+                    <a href="#blog" class="footer__nav-link footer__nav-link--usual">Blog</a>
+                    <a href="#contact" class="footer__nav-link footer__nav-link--usual">Read Me</a>
+                    <a href="#" class="footer__nav-link footer__nav-link--btn" data-modal="#modal_hire_me">Hire Me</a>
+                </div>
+
+            </div>
+            <!-- footer__inner -->
+
+        </div>
+        <!-- container -->
+    </footer>
+
+    <!-- Modals -->
+    <div class="modal" id="modal_project_1">
+        <div class="modal__dialog">
+
+            <button class="modal__close" type="button" data-close>
+            <img src="img/modal-close.svg" alt="Close">
+        </button>
+
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+
+                        <div><img class="modal-work__photo" src="img/project_1-big.jpg" alt=""></div>
+
+                        <div><img class="modal-work__photo" src="img/project_1-2-big.jpg" alt=""></div>
+
+                    </div>
+                </div>
+                <div class="modal-work__content">
+
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Technomart</h3>
+                        <div class="modal-work__info">
+                            Training <span class="modal-work__info-divider">|</span> 2019
+                        </div>
+                    </div>
+
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">HTML и CSS, level 1</div>
+                        <div class="modal-work__client-company">HTML Academy</div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>Graduation project at HTML Academy courses: an online store of tools and building materials. </p>
+                        <p>Of the layouts proposed at the courses, I chose the most complex one: it contained various and interesting elements from the point of view of design and execution, so it was very interesting for me to work on it.</p>
+                        <a class="btn btn--sm" href="/projects/tech/" target="_blank">Open project</a>
+                    </div>
+
+                    <div class="modal-work__footer">
+
+                        <button class="modal-work__btn modal-work__btn--prev slickPrev" type="button">
+                                    <img src="img/back.svg" alt="Кнопка Назад" height="11">
+                                    Previeous</button>
+                        <button class="modal-work__btn modal-work__btn--next slickNext" type="button">
+                                    <img src="img/next.svg" alt="Кнопка Вперед" height="11">
+                                    Next</button>
+
+                    </div>
+
+
+
+                </div>
+                <!-- modal-work__content -->
+            </div>
+            <!-- modal-work -->
+
+        </div>
+        <!-- modal__dialog -->
+    </div>
+    <!-- modal -->
+
+
+    <div class="modal" id="modal_project_2">
+        <div class="modal__dialog">
+
+            <button class="modal__close" type="button" data-close>
+            <img src="img/modal-close.svg" alt="Close">
+        </button>
+
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+
+                        <div><img class="modal-work__photo" src="img/project_2-big.jpg" alt=""></div>
+
+                        <div><img class="modal-work__photo" src="img/project_2-2-big.jpg" alt=""></div>
+
+                    </div>
+                </div>
+                <div class="modal-work__content">
+
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Photo app “Pink”</h3>
+                        <div class="modal-work__info">
+                            TRAINING <span class="modal-work__info-divider">|</span> 2020
+                        </div>
+                    </div>
+
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">HTML и CSS, level 2</div>
+                        <div class="modal-work__client-company">HTML Academy</div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>Medium Difficulty Project - “Pink” photo application for coloring gray everyday life</p>
+                        <p>BEM, SASS, adaptive, retina, GULP</p>
+                    </div>
+
+                    <div class="modal-work__footer">
+
+                        <button class="modal-work__btn modal-work__btn--prev slickPrev" type="button">
+                                    <img src="img/back.svg" alt="Кнопка Назад" height="11">
+                                    Previeous</button>
+                        <button class="modal-work__btn modal-work__btn--next slickNext" type="button">
+                                    <img src="img/next.svg" alt="Кнопка Вперед" height="11">
+                                    Next</button>
+
+                    </div>
+
+
+
+                </div>
+                <!-- modal-work__content -->
+            </div>
+            <!-- modal-work -->
+
+        </div>
+        <!-- modal__dialog -->
+    </div>
+    <!-- modal -->
+
+
+    <div class="modal" id="modal_project_3">
+        <div class="modal__dialog">
+
+            <button class="modal__close" type="button" data-close>
+            <img src="img/modal-close.svg" alt="Close">
+        </button>
+
+            <div class="modal-work">
+                <div class="modal-work__preview">
+                    <div data-slider="slick">
+
+                        <div><img class="modal-work__photo" src="img/project_3-big.jpg" alt=""></div>
+
+                        <div><img class="modal-work__photo" src="img/project_3-2-big.jpg" alt=""></div>
+
+                    </div>
+                </div>
+                <div class="modal-work__content">
+
+                    <div class="modal-work__header">
+                        <h3 class="modal-work__title">Сat hostel</h3>
+                        <div class="modal-work__info">
+                            TRAINING <span class="modal-work__info-divider">|</span> 2020
+                        </div>
+                    </div>
+
+                    <div class="modal-work__client">
+                        <div class="modal-work__client-title">HTML и CSS</div>
+                        <div class="modal-work__client-company">HTML Academy</div>
+                    </div>
+
+                    <div class="modal-work__text">
+                        <p>Сomfortable hotel for cats and dogs</p>
+                        <p>BEM, SASS, adaptive</p>
+                    </div>
+
+                    <div class="modal-work__footer">
+
+                        <button class="modal-work__btn modal-work__btn--prev slickPrev" type="button">
+                                    <img src="img/back.svg" alt="Кнопка Назад" height="11">
+                                    Previeous</button>
+                        <button class="modal-work__btn modal-work__btn--next slickNext" type="button">
+                                    <img src="img/next.svg" alt="Кнопка Вперед" height="11">
+                                    Next</button>
+
+                    </div>
+
+
+
+                </div>
+                <!-- modal-work__content -->
+            </div>
+            <!-- modal-work -->
+
+        </div>
+        <!-- modal__dialog -->
+    </div>
+    <!-- modal -->
+
+
+
+    <div class="modal" id="modal_resume">
+        <div class="modal__dialog">
+
+            <button class="modal__close" type="button" data-close>
+                        <img src="img/modal-close.svg" alt="Close">
+            </button>
+
+            <div class="modal__content">
+                <h3 class="modal__title text-center">Resume</h3>
+
+                <!-- <div class="text-center">
+                    <a class="btn btn--thin" href="#">Download PDF</a>
+                    <a class="btn btn--thin" href="#">Print</a>
+                </div> -->
+
+                <div class="timeline">
+                    <div class="timeline__col timeline__col--left">
+                        <h4 class="timeline__title">Experience</h4>
+
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="2020-02-06">2017 - <b>Present</b></time>
+                            <h5 class="timeline__subtitle">Freelancer</h5>
+                            <div class="timeline__position">HR-manager</div>
+                            <div class="timeline__text">
+                                <p>Personnel recruitment, staff placement, HR administration</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="2020-02-06">2017 - 2016</time>
+                            <h5 class="timeline__subtitle">Ministry of Interior of the Russian Federation</h5>
+                            <div class="timeline__position">Engineer of the group of information technologies, communications and information protection</div>
+                            <div class="timeline__text">
+                                <p>1. Ensuring the protection of personal data; <br>2. Ensuring the operation of secure communication channels; <br>3. Installation, maintenance and support of information security tools.</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="2014-09-01">2014 - 2016</time>
+                            <h5 class="timeline__subtitle">LTD Informtorgservice</h5>
+                            <div class="timeline__position">Information protection specialist</div>
+                            <div class="timeline__text">
+                                <p>Monitoring and evaluating the effectiveness of measures taken and information security tools used. Organization and control of the permitting system for admission of performers to work with protected information. <br>1.
+                                    Ensuring the protection of personal data; <br>2. Ensuring the operation of secure communication channels; <br>3. Installation, maintenance and support of information security tools.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="timeline__col timeline__col--right">
+                        <h4 class="timeline__title">Education</h4>
+
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="2020-02-06">2016-unfinished</time>
+                            <h5 class="timeline__subtitle">OSAU</h5>
+                            <div class="timeline__position">Faculty of Law</div>
+                        </div>
+
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="2006-09-01">2006-2011</time>
+                            <h5 class="timeline__subtitle">OSU</h5>
+                            <div class="timeline__position">Management and computer science in technical systems</div>
+                        </div>
+
+                        <h4 class="timeline__title">Skills</h4>
+
+                        <div class="progress-bar">
+                            <div class="progress-bar__item">
+                                <div class="progress-bar__left">
+                                    <div class="progress-bar__title">HTML-CSS</div>
+                                </div>
+                                <div class="progress-bar__right">
+                                    <div class="progress-bar__bar">
+                                        <div class="progress-bar__progress" style="width: 90%;">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="progress-bar__item">
+                                <div class="progress-bar__left">
+                                    <div class="progress-bar__title">JS</div>
+                                </div>
+                                <div class="progress-bar__right">
+                                    <div class="progress-bar__bar">
+                                        <div class="progress-bar__progress" style="width: 20%;">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="progress-bar__item">
+                                <div class="progress-bar__left">
+                                    <div class="progress-bar__title">PHP</div>
+                                </div>
+                                <div class="progress-bar__right">
+                                    <div class="progress-bar__bar">
+                                        <div class="progress-bar__progress" style="width: 10%;">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- progress-bar -->
+                        <h4 class="timeline__title">Awards</h4>
+
+                        <div class="timeline__item">
+                            <time class="timeline__date" datetime="2019-11-06">2019</time>
+                            <h5 class="timeline__subtitle">HTML-academy</h5>
+                            <div class="timeline__position"><a href="https://assets.htmlacademy.ru/certificates/intensive/111/988453.pdf" target="_blank">Professional HTML & CSS, level 1</a></div>
+                            <div class="timeline__text">
+                                <p>Layout: work with GitHub Desktop and Figma, create accessible markup, build page grids on GRID - FLEXBOX, work with custom properties, animation, retin graphics, optimize the code. At each stage, your work will be checked
+                                    and commented on by a personal mentor.</p>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- timeline__col -->
+                </div>
+                <!-- timeline -->
+
+                <!-- <div class="text-center">
+                    <a class="btn" href="#">Hire Me</a>
+                </div> -->
+
+            </div>
+            <!-- modal__content -->
+
+
+
+        </div>
+        <!-- modal__dialog -->
+    </div>
+    <!-- modal -->
+
+    <div class="modal" id="modal_hire_me">
+        <div class="modal__dialog modal__dialog--sm">
+
+            <button class="modal__close" type="button" data-close>
+                <img src="img/modal-close.svg" alt="Close">
+            </button>
+
+            <div class="contact">
+
+                <div class="contact__left">
+                    <h3 class="modal__title mb-0">Let`s talk!</h3>
+                    <h4 class="modal__subtitle">Call me or send me a request</h4>
+
+                    <ul class="contact__info">
+                        <li class="contact__info-item">
+                            <img class="contact__info-icon" src="img/phone.svg" alt="Иконка телефона">
+                            <a href="tel:+79123451818"></a>8-912-345-1818</a>
+                        </li>
+                        <li class="contact__info-item">
+                            <img class="contact__info-icon" src="img/mail.svg" alt="Иконка конверта"> aturalinov@gmail.com
+                        </li>
+                    </ul>
+
+                    <form action="/" method="post">
+                        <div class="form__group">
+                            <label class="form__label" for="input-email">Adress e-mail</label>
+                            <input class="form__input" name="input-email" id="input-email" type="text" placeholder="Adress e-mail">
+                        </div>
+
+                        <div class="form__group">
+                            <label class="form__label" for="input-text">Request</label>
+                            <textarea class="form__textarea" name="input-text" id="input-text" placeholder="Type your request..."></textarea>
+                        </div>
+
+                        <div class="text-right">
+                            <button class="btn" type="submit">Send</button>
+                        </div>
+                    </form>
+
+
+                </div>
+                <!-- contact__left -->
+            </div>
+            <!-- contact -->
+
+
+
+        </div>
+        <!-- modal__dialog -->
+    </div>
+    <!-- modal -->
+
+    <!-- JS -->
+    <script src="js/slick.min.js"></script>
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>

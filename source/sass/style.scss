@@ -1,0 +1,33 @@
+/* Vendors */
+
+@import "vendor/_slick.scss";
+
+/* Style */
+
+@import "_normalize.scss";
+@import "_variables.scss";
+@import "_mixins.scss";
+@import "_global.scss";
+@import "blocks/_header.scss";
+@import "blocks/_user.scss";
+@import "blocks/_nav.scss";
+@import "blocks/_intro.scss";
+@import "blocks/_social.scss";
+@import "blocks/_btn.scss";
+@import "blocks/_works.scss";
+@import "blocks/_portfolio.scss";
+@import "blocks/_work.scss";
+@import "blocks/_about.scss";
+@import "blocks/_reviews.scss";
+@import "blocks/_news.scss";
+@import "blocks/_articles.scss";
+@import "blocks/_footer.scss";
+@import "blocks/_modal.scss";
+@import "blocks/_modal-work.scss";
+@import "blocks/_timeline.scss";
+@import "blocks/_progress-bar.scss";
+@import "blocks/_contact.scss";
+@import "blocks/_form.scss";
+@import "blocks/_burger.scss";
+// Helpers
+@import "blocks/_helpers.scss";

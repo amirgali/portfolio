@@ -1,0 +1,32 @@
+    .user {
+        display: flex;
+    }
+    
+    .user__avatar {
+        width: 57px;
+        height: 57px;
+        img {
+            border-radius: 50%;
+            transition: transform 0.2s linear;
+            &:hover {
+                transform: scale(1.2);
+            }
+        }
+    }
+    
+    .user__content {
+        padding-left: 9px;
+    }
+    
+    .user__name {
+        margin-bottom: 3px;
+        font-size: 1.06rem;
+        line-height: 1.2;
+        color: $black;
+        font-weight: 700;
+    }
+    
+    .user__prof {
+        font-size: 0.8rem;
+        color: rgba(#2B2A2C, 0.7);
+    }

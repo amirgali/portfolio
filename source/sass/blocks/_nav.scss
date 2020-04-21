@@ -1,0 +1,70 @@
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: center;
+    @media (max-width: $mobile) {
+        position: absolute;
+        top: 100%;
+        right: 0;
+        z-index: 1000;
+        background-color: #fff;
+        box-shadow: 0 5px 10px rgba( #000000, 0.3);
+        text-align: center;
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+        display: none;
+        &.show {
+            display: flex;
+        }
+    }
+}
+
+.nav__link {
+    position: relative;
+    margin-left: 2rem;
+    font-size: 0.93rem;
+    color: $black;
+    text-transform: uppercase;
+    font-weight: 700;
+    //border: 2px solid transparent;
+    &:after {
+        position: absolute;
+        content: "";
+        bottom: -5px;
+        left: 0;
+        z-index: 1;
+        width: 0;
+        height: 2px;
+        background-color: $black;
+        transition: width 0.2s linear;
+    }
+    &:hover:not(.nav__link--btn) {
+        &:after {
+            width: 100%;
+        }
+    }
+    // Модификаторы
+    &--btn {
+        padding: 0.66rem 2rem;
+        border: 2px solid $black;
+        border-radius: 20px;
+        transition: background-color 0.2s linear, color 0.2s linear;
+        &:hover {
+            background-color: $black;
+            color: $white;
+        }
+    }
+    @media (max-width: $mobile) {
+        width: 100%;
+        margin-left: 0;
+        padding: 0.5rem 1rem;
+    }
+}
+
+.nav__link--btn {
+    @media (max-width: $mobile) {
+        margin-top: 1.5rem;
+    }
+}

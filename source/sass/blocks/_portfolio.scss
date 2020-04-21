@@ -1,0 +1,16 @@
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -1rem 2.8rem;
+}
+
+.portfolio__col {
+    width: 33.33333%;
+    padding: 1rem;
+    @media (max-width: $mobile) {
+        width: 50%;
+    }
+    @media (max-width: $mobile-sm) {
+        width: 100%;
+    }
+}

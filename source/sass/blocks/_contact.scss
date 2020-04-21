@@ -1,0 +1,37 @@
+        .contact {
+            display: flex;
+            background: url(../../img/photo-3.jpg) right center no-repeat;
+            @media (max-width: $tablet) {
+                background: none;
+            }
+        }
+        
+        .contact__left {
+            padding: 2rem;
+            width: 47%;
+            @media (max-width: $tablet) {
+                width: 100%;
+            }
+        }
+        
+        .contact__info {
+            margin: 2rem 0 3rem;
+            padding: 0;
+            list-style: none;
+            font-size: 0.94rem;
+            color: $black;
+            font-weight: 300;
+        }
+        
+        .contact__info-item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+        
+        .contact__info-icon {
+            margin-right: 0.75rem;
+        }

@@ -15,12 +15,15 @@
 }
 
 .modal-work__photo {
-    width: 100%;
     position: absolute;
-    top: 65%;
-    left: 50%;
+    top: 0;
+    left: 0;
     z-index: 1;
-    transform: translate3d(-50%, -50%, 0);
+    
+    width: 100%;
+    
+    object-fit: contain;
+    
     @media (max-width: $notebook) {
         top: 50%;
         width: 80%;
